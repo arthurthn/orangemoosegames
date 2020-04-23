@@ -10,7 +10,6 @@ setInterval(() =>
 {
     textXRandom = Math.floor(Math.random() * 15)
     textYRandom = Math.floor(Math.random() * 15)
-    console.log(textXRandom, textYRandom)
     winText.style.left = `${textXRandom}px`
     winText.style.top = `${textYRandom}px`
     if(background.style.left == '-300px')
