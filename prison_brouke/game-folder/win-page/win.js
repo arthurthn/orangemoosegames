@@ -1,5 +1,7 @@
 const background = document.querySelector('.win-background')
 const winText = document.querySelector('.win-text')
+const uho = document.querySelector('.uho')
+uho.volume = 0.3
 let textXRandom
 let textYRandom
 let backgroundX = -300
@@ -24,6 +26,12 @@ setInterval(() =>
     }
 
 }, 50);
+
+window.addEventListener('mousemove', ()=>
+{
+    uho.play()
+})
+
 
 
 
