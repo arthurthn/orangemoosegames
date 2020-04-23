@@ -1,0 +1,531 @@
+*
+{
+  text-decoration: none;
+}
+
+body
+{
+  font-family: 'Cairo', sans-serif;
+  font-size: 8px;
+}
+
+/****************** Background *************/
+.img
+{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 170vh;
+}
+.bg
+{
+  visibility: hidden;
+}
+/********** Personnages d'arrière plan ***********/
+
+.tir
+{
+  top: 24vh;
+  left: 5.5vh;
+  visibility: hidden;
+  height: 615px;
+  width: auto;
+}
+.tirResponsive
+{
+  top: 24vh;
+  left: 5.5vh;
+  visibility: hidden;
+  height: 615px;
+  width: auto;
+}
+.perso
+{
+  width: auto;
+  height: 77vh;
+  margin-top: 24.2vh;
+  margin-left: 3%;
+  visibility: visible;
+}
+.personnage .sansArmes
+{
+  visibility: hidden;
+}
+/*************************** Haut de la page **********************/
+.logo 
+{
+  top: 2vh;
+  left: 3vw;
+  position: absolute;
+  height: auto;
+  width: 65vw;
+}
+.socialMedia
+{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 75vw;
+  margin-top: 6vh;
+
+}
+.socialMedia .image
+{
+  width: 50px;
+  height: auto;
+}
+.socialMedia .copyRight
+{
+  visibility: hidden;
+  width: 0px;
+}
+/************** BOUTTON **************/
+.boutton
+{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 44.5vh;
+  margin-left: 57.5vw;
+  padding: 25px 0;
+  background-color: #a73237;
+  width: 530px;
+  font-size: 42.5px;
+  text-align: center;
+  transform: rotateZ(-1.5deg);
+  color: #eeeeee;
+}
+
+.boutton:hover 
+{
+  background-color: #eeeeee;
+  color: #4B6BFF;
+  width: 580px;
+  margin-left: 56vw;
+  transition: all linear 0.3s;
+}
+/*************************** Milieu de la page **********************/
+.texteQuiRessort
+{
+  font-family: 'Bangers', cursive;
+  font-size: 35px;
+  margin-top: 5vh;
+  margin-left: 68vw;
+}
+.imageDisponible .imageMenu
+{
+  width: 32.5vw;
+  height: auto;
+  margin-top: 30vh;
+  margin-left: 60vw;
+}
+
+/************** Texte copyright / Grid ********************/
+
+.grid
+{
+  display: grid;
+  grid-template-columns: repeat(4, 24.75%);
+  grid-template-rows: repeat(1, 100px);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+.box
+{
+  margin-top: 15vh;
+  grid-row: 1;
+  grid-column: 4;
+  text-align: right;
+}
+
+/***************************** Bas de la Page *********************/
+.zoneEcriture
+{
+  color: #222222;
+  background-color: #fffc00;
+  margin-left: 50vw;
+  margin-top: 35vh;
+  width: 633px;
+  padding: 2vh 3vh;
+}
+.enDessous .noir 
+{
+  top: 169vh;
+  height: 600px;
+}
+.enSavoirPlus .PrisonBrouke
+{
+  left: 0;
+  width: 90vw;
+  height: auto;
+  margin-top: 115vh;
+  margin-left: 5vh;
+}
+.titre
+{
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.texte 
+{
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.coolLine
+{
+  position: relative;
+  width: 400px;
+  margin-top: 0;
+}
+.city
+{
+  position: absolute;
+  margin-top: 155px;
+  left: 50.55vw;
+  width: 633px;
+}
+
+/***************** Footer ******************/
+.whiteLine
+{
+  width: 99.4vw;
+  border-bottom: 1px solid #ffffff;
+  position: absolute;
+}
+.footer
+{
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(4,20%);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  margin-top: 45vh;
+  background-color: #080808;
+}
+.omgLogo
+{
+  grid-column: 1;
+  width: 10vw;
+  margin-left: 5vw;
+  margin-top: 1vw;
+}
+.footerTitre
+{
+  grid-row: 1;
+  color: #eeeeee;
+  font-size: 1.5vw;
+  text-align: left;
+  
+}
+.footerTitre1
+{
+  grid-column: 2;
+}
+.footerListe li
+{
+  font-size: 1vw;
+  list-style: none;
+}
+.footerListe li a
+{
+  color: #ffffff;
+}
+
+.footerTitre2
+{
+  grid-column: 3;
+}
+.footerTitre3
+{
+  grid-column: 4;
+}
+
+
+
+/********************** Responsive 1280px **************************/
+@media only screen and (max-width: 1280px)
+{
+  /******* Background *******/
+  .bg
+  {
+    visibility: visible;
+  }
+  /******* Personnages d'arrière plan *******/
+  .perso
+  {
+    visibility: visible;
+  }
+  /************************* Haut de la page ********************/
+  .logo
+  {
+    width: 70%;
+  }
+  .socialMedia
+  {
+    flex-direction: column;
+    margin-left: 85vw;
+    margin-top: 5vh;
+    width: auto;
+  }
+
+  .socialMedia .copyRight
+  {
+    visibility: visible;
+    height: 40px;
+    width: auto;
+    margin-top: 0.7vh;
+    margin-left: 0.6vw;
+  }
+
+  /******* BOUTTON *******/
+  .boutton
+  {
+    transform: rotateZ(0deg);
+    width: 450px;
+    margin-top: 35vh;
+    margin-left: 50vw;
+    font-size: 30px;
+  }
+
+  .boutton:hover
+  {
+    background-color: #eeeeee;
+    color: #4B6BFF;
+    width: 500px;
+    margin-left: 47vw;
+    transition: all linear 0.3s;
+  }
+  /************************* Milieu de la page ********************/
+  .texteQuiRessort
+  {
+    margin-top: 1.5vw;
+    margin-left: 63vw;
+    text-align: center;
+  }
+  .imageDisponible .imageMenu
+  {
+    margin-top: 55vh;
+    margin-left: 55vw;
+    width: 40vw;
+  }
+  /******* Texte Copyright / Grid *******/
+  .grid .box
+  {
+    display: none;
+  }
+  /************************** Bas de Page *************************/
+  .PrisonBrouke
+  {
+    width: 45vw;
+    height: auto;
+    margin-top: 58vh;
+  }
+  .zoneEcriture
+  {
+    width: 40vw;
+  }
+  .city
+  {
+    display: none;
+  }
+  .enDessous .noir
+{
+  top: 169vh;
+  height: 520px;
+}
+  /***************************  Footer *******************/
+  .whiteLine
+{
+  width: 99vw;
+}
+  .footer
+  {
+    margin-top: 5vw;
+  }
+  .footerTitre
+  {
+    font-size: 20px;
+  }
+  .footerListe li
+  {
+    font-size: 14px; 
+  }
+}
+
+/* Responsive 950px */
+@media only screen and (max-width: 950px)
+{
+  .boutton
+  {
+    transform: rotateZ(0deg);
+    width: 400px;
+    margin-top: 32vh;
+    margin-left: 50vw;
+    font-size: 30px;
+  }
+
+  .boutton:hover
+  {
+    background-color: #eeeeee;
+    color: #4B6BFF;
+    width: 410px;
+    margin-left: 51vw;
+    transition: all linear 0.3s;
+  }
+  .coolLine
+  {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 0;
+  }
+}
+
+/********************** Responsive 900px **************************/
+@media only screen and (max-width: 900px)
+{
+  /******* Background *******/
+
+  /******* Personnages d'arrière plan *******/
+
+  .tir
+  {
+    display: none;
+  }
+  .perso
+  {
+    margin-left: 5vh;
+  }
+  .personnage .sansArmes
+  {
+    visibility: visible;
+  }
+  .principal
+  {
+    display: none;
+  }
+  /************************* Haut de la page ********************/
+ 
+  .logo
+  {
+    margin-left: 2vw;;
+    width: 90%;
+  }
+  .socialMedia
+  {
+    margin-top: 60vh;
+  }
+  .socialMedia .image
+  {
+    width: 45px;
+    height: auto;
+  }
+  .socialMedia .copyRight
+  {
+    visibility: visible;
+    height: 25px;
+    width: auto;
+    margin-left: 2.2vw;
+    margin-top: 1.5vh;
+  }
+
+  /******* BOUTTON *******/
+
+  .boutton
+  {
+    position: absolute;
+    top: 2vw;
+    left: 0;
+    margin: 11.5vh 0 0 28vw;
+    width: 45%;
+    font-size: 3vw;
+    transform: rotateZ(0deg);
+  }
+  .boutton:hover
+  {
+    background-color: #eeeeee;
+    color: #4B6BFF;
+    width: 50%;
+    margin-left: 25vw;
+    transition: all linear 0.3s;
+  }
+  /************************* Milieu de la page ********************/
+  .imageDisponible .imageMenu
+  {
+    display: none;
+  }
+
+  /******* Texte Copyright / Grid *******/
+
+  .texteQuiRessort
+  {
+    display: none;
+  }
+  /* Grid */
+  .grid
+  {
+    display: none;
+  }
+  .grid .box
+  {
+    display: none;  
+  }
+  /************************** Bas de Page *************************/
+
+  .enDessous .noir
+  {
+    top: 169vh;
+    height: 380px;
+  }
+
+  .enSavoirPlus .PrisonBrouke
+  {
+    left: 0;
+    width: 90vw;
+    height: auto;
+    margin-top: 115vh;
+    margin-left: 5vw;
+  }
+  .zoneEcriture
+  {
+    background: none;
+    margin-left: 0;
+  }
+  .city
+  {
+    display: none;
+  }
+  .titre
+  {
+    position: absolute;
+    top: 103vh;
+    left: 20vw;
+    width: 45vw;
+    margin: 0;
+    padding: 5px 5vw;
+    text-align: center;
+    color: #222222;
+    background-color: #fffc00;
+    font-size: 40px; 
+  }
+  .coolLine
+  {
+    position: absolute;
+    top: 112.5vh;
+    left: 30.5vw;
+    width: 200px;
+  }
+  .texte
+  {
+    color: #eeeeee;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 30vw; 
+  }
+  .whiteLine
+  {
+    width: 98.4vw;
+  }
+  }
+  /***************************  Footer *******************/

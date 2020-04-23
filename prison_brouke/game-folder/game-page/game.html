@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01 - Javascript</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="background">
+        <img src="../ressources/map-design.png" alt="" class="map-design">
+        <div class="player"></div>
+        <div class="collision-box start-wall"></div>
+        <div class="collision-box end-wall"></div>
+        <div class="collision-box air-conditiong-wall"></div>
+        <div class="collision-box exit-wall"></div>
+        <div class="collision-box floor-1"></div>
+        <div class="collision-box floor-2"></div>
+        <div class="collision-box wood-box-1"></div>
+        <div class="collision-box pipe"></div>
+        <div class="collision-box stone-box-1"></div>
+        <div class="collision-box stone-box-2"></div>
+        <div class="collision-box stone-box-3"></div>
+        <div class="collision-box little-bloc"></div>
+        <div class="collision-box blue-box-1"></div>
+        <div class="collision-box camera-wall"></div>
+        <div class="ladders ladder-1"></div>
+        <div class="ladders ladder-2"></div>
+        <img src="../ressources/over-player-img/top-door.png" alt="" class="door-1">
+        <img src="../ressources/over-player-img/top-wall.png" alt="" class="wall-1">
+        <img src="../ressources/over-player-img/bottom-door.png" alt="" class="door-2">
+        <img src="../ressources/over-player-img/bottom-wall.png" alt="" class="wall-2">
+        <img src="../ressources/over-player-img/ladders-over-1.png" alt="" class="ladders-over-1">
+        <img src="../ressources/over-player-img/ladders-over-2.png" alt="" class="ladders-over-2">
+        <div class="collision-box wood-box-2"></div>
+        <div class="collision-box wood-box-3"></div>
+        <img src = "../ressources/over-player-img/key.png"class="openKey">
+        <div class="bot bot-1"></div>
+        <div class="bot bot-2"></div>
+        <div class="bot bot-3"></div>
+        <div class="bot bot-4"></div>
+        <div class="bot-detection bot-detection-1"></div>
+        <div class="bot-detection bot-detection-2"></div>
+        <div class="bot-detection bot-detection-3"></div>
+        <div class="bot-detection bot-detection-4"></div>
+        <div class="instructions">
+            <div class="instruction moves">
+                <div class="top-keys">
+                    <div class="z key ">z</div>
+                </div>
+                <div class="bottom-keys">
+                    <div class="q key">q</div>
+                    <div class="s key">s</div>
+                    <div class="d key">d</div>
+                </div>
+            </div>
+            <div class="instruction jump">
+                <div class="space key">space</div>
+            </div>
+            <div class="instruction shoot">
+                <div class="e key">e</div>
+            </div>
+            <div class="instruction crouch">
+                <div class="alt key">alt</div>
+            </div>
+            <img src="../ressources/hud/health-bar-3.png" class="health-bar">
+        </div>
+        <audio src="../ressources/sound-design/jump-sound.wav" class="jump-sound audio"></audio>
+        <audio src="../ressources/sound-design/gun.mp3" class="bot-gun audio"></audio>       
+        <audio src="../ressources/sound-design/gun.mp3" class="gun audio"></audio>
+        <audio src="../ressources/sound-design/sirena.wav" class="sirena audio"></audio>
+        <audio src="../ressources/sound-design/run.wav" class="run audio"></audio>
+        <audio src="../ressources/sound-design/key-pickup.wav" class="key-pickup audio"></audio>
+
+        <a href="../win-page/win.html" class="win"></a>
+        <a href="../lose-page/lose.html" class="lose"></a>
+    </div>
+    <script src="../javascript/player-movements.js"></script> 
+    <script src="../javascript/bot.js"></script> 
+    <script src="../javascript/shoot.js"></script> 
+    <script src="../javascript/dooropen-tunnelfilter.js"></script> 
+    
+
+</body>
+</html>
