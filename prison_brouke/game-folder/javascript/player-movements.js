@@ -243,7 +243,7 @@ window.addEventListener('keydown', (event) =>
         jump = true
         
     }
-    if(event.code == 'AltRight' || event.code == 'AltLeft')
+    if(event.code == 'AltRight' || event.code == 'ShiftLeft')
     {
         altKey.style.color = 'black'
         altKey.style.background = 'yellow'
@@ -285,7 +285,7 @@ window.addEventListener('keyup', (event) =>
         spaceKey.style.background = 'none'
         jump = false
     }
-    if(event.code == 'AltRight' || event.code == 'AltLeft')
+    if(event.code == 'AltRight' || event.code == 'ShiftLeft')
     {
         altKey.style.color = 'white'
         altKey.style.background = 'none'
