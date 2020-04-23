@@ -52,7 +52,16 @@ for(audio of audios)
 
 sirena.volume = 0.002
 
-
+// Load all animations
+player.style.background = `url(../ressources/animation/crouch-animation.gif)`
+player.style.background = `url(../ressources/animation/crouch-walk-animation.gif)`
+player.style.background = `url(../ressources/animation/down-ladders.gif)`
+player.style.background = `url(../ressources/animation/shoot-animation.gif)`
+player.style.background = `url(../ressources/animation/shoot-gard-animation.gif)`
+player.style.background = `url(../ressources/animation/jump-animation.gif)`
+player.style.background = `url(../ressources/animation/run-animation.gif)`
+player.style.background = `url(../ressources/animation/up-ladders.gif)`
+player.style.background = `url(../ressources/animation/shoot-gard-animation.gif)`
 
 
 
